@@ -7,16 +7,13 @@ provider:
 
 spring:
   application:
-    name: nacos-restful-consumer #服务名
+    name: nacos-restful-consumer
   cloud:
     nacos:
       discovery:
-        server-addr: 127.0.0.1:8848  #服务发现中心地址
-        namespace: 737e79d5-5c07-4b19-bc4a-bb057e7c5fa9 #指定命名空间的id
-      config:
-        server-addr: 127.0.0.1:8848  #配置中心地址
-        file-extension: yaml  #指定配置文件的扩展名，配置文件名称根据application.name的名称加扩展名拼装，为nacos-restful-consumer.yaml
+        server-addr: 127.0.0.1:8848
 
 nacos-restful-provider:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+

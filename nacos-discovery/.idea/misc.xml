@@ -11,6 +11,9 @@
         <option value="$PROJECT_DIR$/nacos-dubbo-service2/service2‐api/pom.xml" />
         <option value="$PROJECT_DIR$/nacos-dubbo-service2/service2-server/pom.xml" />
         <option value="$PROJECT_DIR$/nacos-dubbo-service1/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-dubbo-service2/service2-api/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-dubbo-service1/service1-api/pom.xml" />
+        <option value="$PROJECT_DIR$/nacos-dubbo-service1/service1‐server/pom.xml" />
       </list>
     </option>
   </component>

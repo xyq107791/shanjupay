@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="nacos-dubbo-service1" />
         <module name="nacos-restful-consumer" />
         <module name="nacos-restful-provider" />
         <module name="service1-api" />
