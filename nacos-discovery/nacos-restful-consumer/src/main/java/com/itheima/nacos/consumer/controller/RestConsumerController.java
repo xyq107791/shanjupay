@@ -1,5 +1,7 @@
 package com.itheima.nacos.consumer.controller;
 
+import com.itheima.microservice.service2.api.Service2Api;
+import org.apache.dubbo.config.annotation.Reference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
@@ -27,17 +29,17 @@ public class RestConsumerController {
         return name + address;
     }
 
-//    @Reference
-//    private Service2Api service2Api;
+    @Reference
+    Service2Api service2Api;
 
     private String serviceId = "nacos-restful-provider";
 
-//    @GetMapping(value = "/service2")
-//    public String service2() {
-//        //远程调用service2
-//        String providerResult = service2Api.dubboService2();
-//        return "consumer dubbo invoke | " + providerResult;
-//    }
+    @GetMapping(value = "/service2")
+    public String service2() {
+        //远程调用service2
+        String providerResult = service2Api.dubboService2();
+        return "consumer dubbo invoke | " + providerResult;
+    }
 
     @Autowired
     LoadBalancerClient loadBalancerClient;
